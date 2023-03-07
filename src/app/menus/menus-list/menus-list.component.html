@@ -1,0 +1,13 @@
+<!-- <img
+  src="https://i.postimg.cc/pV1gyNDm/Screenshot-2022-11-22-170320.png"
+  alt=""
+/> -->
+
+<h1>Menu</h1>
+
+<div class="row">
+  <div *ngFor="let menuElement of menus; let i = index" class="col-md-4">
+    <app-menus-item [menu]="menuElement" [index]="i"></app-menus-item>
+  </div>
+</div>
+

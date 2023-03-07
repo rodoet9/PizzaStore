@@ -1,0 +1,44 @@
+.row {
+  margin-top: 100px;
+}
+
+.benvenuto-cards {
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.magic-flavor {
+  font-family: Oswald, sans-serif;
+  font-size: 12px;
+  line-height: 1.375em;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 14px;
+  color: #d2401e;
+  display: block;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.125em;
+  letter-spacing: 0;
+  color: #303030;
+}
+
+.description {
+  margin-top: 21px;
+  font-weight: 400;
+  color: #5a5a5a;
+  font-size: 18px;
+  line-height: 1.556em;
+  text-align: center;
+  padding: 0px 64px;
+}
+

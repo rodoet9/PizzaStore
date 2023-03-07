@@ -1,0 +1,11 @@
+.description {
+  font-family: open sans, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #858585;
+  -webkit-font-smoothing: antialiased;
+  vertical-align: baseline;
+  line-height: 1.6em;
+  padding-right: 100px;
+  text-align: justify;
+}

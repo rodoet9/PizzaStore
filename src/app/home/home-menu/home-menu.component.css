@@ -1,0 +1,124 @@
+.favorites {
+  font-family: Oswald, sans-serif;
+  font-size: 12px;
+  line-height: 1.375em;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 14px;
+  color: #d2401e;
+  display: block;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.125em;
+  letter-spacing: 0;
+  color: #303030;
+}
+
+.description {
+  margin-top: 21px;
+  font-weight: 400;
+  color: #5a5a5a;
+  font-size: 18px;
+  line-height: 1.556em;
+  text-align: center;
+  padding: 0px 64px;
+}
+
+.menu-flex-center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+  
+}
+
+.order-online {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  margin-bottom: 12px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #d2401e;
+  border: 1px solid transparent;
+  overflow: hidden;
+  width: auto;
+  margin: 0;
+  font-family: Oswald, sans-serif;
+  font-size: 12px;
+  line-height: 1.4em;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  padding: 15px 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.delivery {
+  margin-top: 30px;
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: initial;
+  color: #858585;
+  word-wrap: break-word;
+  text-align: center;
+  letter-spacing: 0;
+  margin-bottom: -30px;
+  
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.delivery-sign {
+  display: flex;
+  justify-content: end;
+  margin-bottom: -70px;
+  position: relative;
+  animation: MoveUpDownSign 2s linear infinite;
+  right: 3%;
+  
+}
+
+.scooter {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  animation: MoveUpDownScooter 0.4s linear infinite;
+  right: 8%;
+}
+
+@keyframes MoveUpDownScooter {
+  0%,
+  100% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 5px;
+  }
+}
+
+@keyframes MoveUpDownSign {
+  0%,
+  100% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 15px;
+  }
+}
+

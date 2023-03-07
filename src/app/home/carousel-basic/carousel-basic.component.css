@@ -1,0 +1,95 @@
+.left {
+  margin-top: 100px;
+}
+
+.picsum-img-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.ciaoo {
+  position: absolute;
+  top: 180px;
+  left: -20px;
+}
+
+.pizza-deals {
+  position: absolute;
+  top: 370px;
+  left: 370px;
+}
+
+.the-real-italian {
+  position: absolute;
+  left: 70px;
+}
+
+.bigger-pic {
+  position: relative;
+  width: 800px;
+  height: 720px;
+}
+
+.btn-order {
+  position: absolute;
+  top: 520px;
+  left: 50px;
+  color: #fff;
+  background-color: #d2401e;
+  border: 1px solid transparent;
+  border-radius: 0;
+  overflow: hidden;
+  width: auto;
+  margin: 0;
+  font-family: Oswald, sans-serif;
+  font-size: 12px;
+  line-height: 1.4em;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+  padding: 15px 30px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.prev {
+  cursor: pointer;
+  font-family: "Oswald";
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: #d2401e;
+  position: absolute;
+  top: 50%;
+  right: 98%;
+  transform: rotate(90deg) translateX(-50%);
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  padding: 12px 32px 82px;
+  background-color: #f7f7f2;
+}
+
+.next {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: #d2401e;
+  display: block;
+  box-sizing: border-box;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  background-color: #f7f7f2;
+  padding: 12px 32px 82px;
+  min-width: 40px;
+  height: 38px;
+  top: 50%;
+  left: 98%;
+  position: absolute;
+  transform: rotate(-90deg) translateX(50%);
+}

@@ -1,0 +1,36 @@
+.item {
+  margin-bottom: 200px;
+}
+
+img {
+  width: 412px;
+  height: 308px;
+}
+
+h3 {
+  color: #303030;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.descriptionCard {
+  color: #858585;
+  margin-top: 8px;
+  line-height: 1.6em;
+  font-family: open sans, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.button {
+  color: #b7903c;
+  font-family: Oswald, sans-serif;
+  font-size: 12px;
+  line-height: 1.4em;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+}

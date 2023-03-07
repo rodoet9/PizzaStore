@@ -1,0 +1,62 @@
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <p class="favorites">Pick your favorites</p>
+    <h2>PEPPE'S PIZZA, THE BEST IN TOWN</h2>
+    <p class="description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu
+      in pretium molestie. Interdum et malesuada fames ac.
+    </p>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+
+<div class="row">
+  <div class="col-md-6 menu-flex-center" *ngFor="let homeItem of homeItems">
+    <app-home-menu-item
+      [homeItem]="homeItem"
+      style="width: 85%"
+    ></app-home-menu-item>
+  </div>
+</div>
+
+<div class="order-online"><a href="#">Order online</a></div>
+<p class="delivery">
+  * Offers available for carry-out and delivery orders only.
+</p>
+
+<div class="animations">
+  <div class="delivery-sign">
+    <img
+      src="https://i.postimg.cc/LXBKZZND/Screenshot-2022-11-21-172255-removebg-preview.png"
+      alt=""
+      width="150px"
+      height="150px"
+    />
+  </div>
+  <div class="scooter">
+    <img
+      src="https://i.postimg.cc/WzZxGqNt/Pizza-delivery-man-with-scooter-and-helmet-royalty-free-PNG-removebg-preview.png"
+      alt=""
+      width="200px"
+      height="200px"
+    />
+  </div>
+</div>
+
+<figure>
+  <img
+    src="https://i.postimg.cc/02Z867hN/Screenshot-2022-11-21-150855.png"
+    alt=""
+  />
+</figure>
+
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d39166.075314753834!2d26.028512668977594!3d44.44016636594658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sro!2sro!4v1669045610478!5m2!1sro!2sro"
+  width="100%"
+  height="600"
+  style="border: 0"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+></iframe>

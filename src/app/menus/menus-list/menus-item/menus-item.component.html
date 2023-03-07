@@ -1,0 +1,30 @@
+<div class="card">
+  <h5 class="card-title">
+    {{ menu.name }}
+  </h5>
+  <div class="card-body d-flex justify-content-center">
+    <img
+      src="http://themes.templatescoder.com/pizzon/html/demo/1-0/images/p-4.png"
+      alt="{{ menu.name }}"
+      class="card-img-top img-responsive rotate"
+    />
+  </div>
+  <p class="card-text d-flex justify-content-center">
+    {{ menu.description | shorten: 105 }}
+  </p>
+  <div class="button d-flex justify-content-center">
+    <a
+      routerLinkActive="active"
+      routerLink="/menu-welcome"
+      class="btn-order"
+      (click)="onOrder(menu)"
+      >View Details</a
+    >
+    <!-- <a
+      class="btn btn-outline-danger"
+      style="width: 120px; align-self: center; margin-bottom: 12px"
+      (click)="onDeletePizza()"
+      >Delete</a
+    > -->
+  </div>
+</div>

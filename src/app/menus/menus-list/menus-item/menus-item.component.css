@@ -1,0 +1,97 @@
+.card-title {
+  color: rgb(114, 38, 38);
+  margin-top: 12px;
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin-bottom: 24px;
+  border-radius: 0;
+  background-color: whitesmoke;
+}
+
+.card:hover {
+  border: 1px solid rgb(83, 63, 63);
+  box-shadow: 2px 2px rgba(88, 28, 28, 0.836);
+}
+
+img:hover {
+  transform: scale(1.3);
+}
+
+img {
+  width: 220px;
+  height: 220px;
+}
+
+p.card-text {
+  color: rgb(119, 47, 47);
+  padding: 16px;
+  text-align: justify;
+}
+
+.card:hover .button {
+  opacity: 1;
+}
+
+.btn-order {
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  display: inline-block;
+  text-decoration-line: none;
+  vertical-align: middle;
+  width: auto;
+  margin: 0;
+  font-family: Oswald, sans-serif;
+  font-size: 16px;
+  line-height: 1.4em;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  outline: 0;
+  box-sizing: border-box;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+  border-color 0.2s ease-in-out;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: #d2401e;
+  border: 1px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.btn-order:hover {
+  background-color: #832d1a;
+}
+
+.button {
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.45s ease;
+}
+
+.button a {
+  /* width: 160px; */
+  align-self: center;
+  margin-bottom: 12px;
+  margin-right: 8px;
+  text-align: center;
+  z-index: 1;
+}
+
+.card:hover .rotate {
+  animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg) scale(1.2);
+  }
+  to {
+    transform: rotate(359deg) scale(1.2);
+  }
+}

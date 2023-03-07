@@ -1,0 +1,152 @@
+<app-header-full></app-header-full>
+<!-- <img
+  src="https://i.postimg.cc/pV1gyNDm/Screenshot-2022-11-22-170320.png"
+  alt=""
+/> -->
+<h1>Pizza details</h1>
+<div class="page">
+  <div class="row">
+    <div class="col-lg-6">
+      <img
+        class="pizza-photo"
+        [src]="menu.imagePath"
+        alt="Pizza photo"
+        style="width: 654px; height: 654px"
+      />
+    </div>
+    <div class="col-lg-4">
+      <h2>{{ menu.name }}</h2>
+      <span class="price"> {{ 27 | currency : "$" }} </span>
+      <p class="description">
+        {{ menu.description }}
+      </p>
+      <p class="nutritional">Nutritional value per 100 G:</p>
+      <ul>
+        <li>
+          <span class="type">Calories</span>
+          <div class="spacing-dots"></div>
+          <span class="value"> {{ menu.calories }} kcal</span>
+        </li>
+        <li>
+          <span class="type">Carbohydrates</span>
+          <div class="spacing-dots"></div>
+          <span class="value"> {{ menu.carbohydrates }} g</span>
+        </li>
+        <li>
+          <span class="type">Squirrels</span>
+          <div class="spacing-dots"></div>
+          <span class="value"> {{ menu.squirrels }} g</span>
+        </li>
+        <li>
+          <span class="type">Fats</span>
+          <div class="spacing-dots"></div>
+          <span class="value"> {{ menu.fats }} g</span>
+        </li>
+      </ul>
+
+      <div class="product_meta">
+        <span class="sku_wrapper">SKU: <span class="sku">014</span></span>
+        <span class="posted_in"
+          >Category:
+          <a
+            href="https://donpeppe.qodeinteractive.com/product-category/veggie/"
+            rel="tag"
+            >Veggie</a
+          ></span
+        >
+        <span class="tagged_as"
+          >Tag:
+          <a
+            href="https://donpeppe.qodeinteractive.com/product-tag/napoli/"
+            rel="tag"
+            >Napoli</a
+          ></span
+        >
+      </div>
+
+      <div class="size">
+        <h4>Size</h4>
+        <div
+          class="btn-group"
+          role="group"
+          aria-label="Basic radio toggle button group"
+        >
+          <input
+            (click)="size = 24"
+            type="radio"
+            class="btn-check"
+            name="btnradio"
+            id="btnradio1"
+            autocomplete="off"
+            checked
+          />
+          <label class="btn btn-outline-warning" for="btnradio1">24 cm</label>
+
+          <input
+            (click)="size = 32"
+            type="radio"
+            class="btn-check"
+            name="btnradio"
+            id="btnradio2"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-warning" for="btnradio2">32 cm</label>
+
+          <input
+            (click)="size = 45"
+            type="radio"
+            class="btn-check"
+            name="btnradio"
+            id="btnradio3"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-warning" for="btnradio3">45 cm</label>
+        </div>
+        <hr />
+      </div>
+      <div class="quantity">
+        <input
+          type="number"
+          min="0"
+          max="10"
+          placeholder="0"
+          id="qty"
+          [(ngModel)]="quantity"
+        />
+        <button
+          type="button"
+          class="btn-order"
+          (click)="placeOrder()"
+          triggers="click"
+          [autoClose]="'outside'"
+          ngbTooltip="Your pizza has been added to the cart"
+          placement="bottom"
+          tooltipClass="my-custom-class"
+        >
+          Add to cart
+        </button>
+        <!-- <button
+          type="button"
+          class="btn btn-outline-danger"
+          (click)="viewOrders()"
+        >
+          View orders
+        </button> -->
+      </div>
+    </div>
+    <div class="col-lg-2"></div>
+  </div>
+</div>
+
+<div class="desc-info-rev">
+  <a class="desc" (click)="onDesc()"><h5>Description</h5></a>
+  <a class="info" (click)="onInfo()"><h5>Additional information</h5></a>
+  <a class="rev" (click)="onReviews()"><h5>Reviews</h5></a>
+</div>
+<hr width="45%" />
+<div class="spacing-dot"></div>
+<div class="row">
+  <div class="col-md-12">
+    <router-outlet></router-outlet>
+  </div>
+</div>

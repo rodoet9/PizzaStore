@@ -1,0 +1,21 @@
+.row {
+  margin-top: 64px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+h1 {
+  background-image: url("https://i.postimg.cc/pV1gyNDm/Screenshot-2022-11-22-170320.png");
+  color: whitesmoke;
+  padding-left: 100px;
+  padding-top: 100px;
+  height: 280px;
+  text-transform: uppercase;
+  font-family: Oswald, sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  letter-spacing: 2px;
+  margin-bottom: -30px;
+  width: 100vw;
+  margin-left: -20px;
+}

@@ -1,0 +1,174 @@
+<app-header-full></app-header-full>
+
+<h1>Checkout</h1>
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onCheckout()">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Billing details</h2>
+      <div class="form-group">
+        <div class="firstName">
+          <label for="firstName"
+            >First name
+            <span placement="end" ngbTooltip="Required">*</span></label
+          >
+          <input
+            type="text"
+            formControlName="firstName"
+            id="firstName"
+            style="width: 312px"
+          />
+        </div>
+        <div class="lastName">
+          <label for="lastName"
+            >Last name
+            <span placement="end" ngbTooltip="Required">*</span></label
+          >
+          <input
+            type="text"
+            formControlName="lastName"
+            id="lastName"
+            style="width: 312px"
+          />
+        </div>
+      </div>
+      <div class="company">
+        <label for="companyName">Company name (optional)</label>
+        <input type="text" formControlName="companyName" id="companyName" />
+      </div>
+      <div class="input-group mb-3 country">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01"
+            >Country / Region
+            <span placement="end" ngbTooltip="Required">*</span></label
+          >
+        </div>
+        <select class="custom-select" id="inputGroupSelect01">
+          <option value="1">Romania</option>
+          <option value="2">Italy</option>
+          <option value="3">Germany</option>
+        </select>
+      </div>
+
+      <div class="streetAddress">
+        <label for="streetAddress">
+          Street address <span placement="end" ngbTooltip="Required">*</span>
+        </label>
+        <input
+          type="text"
+          formControlName="streetAddress"
+          id="streetAddress"
+          placeholder="House number and street name"
+        />
+        <input
+          type="text"
+          formControlName="streetAddress"
+          id="streetAddress"
+          placeholder="Apartament, suite, unit, etc. (optional)"
+        />
+      </div>
+
+      <div class="town">
+        <label for="town"
+          >Town /City
+          <span placement="end" ngbTooltip="Required">*</span></label
+        >
+        <input type="text" formControlName="town" id="town" />
+      </div>
+      <div class="county">
+        <label for="county"
+          >County <span placement="end" ngbTooltip="Required">*</span></label
+        >
+        <input type="text" formControlName="county" id="county" />
+      </div>
+
+      <div class="postcode">
+        <label for="postcode"
+          >Postcode / ZIP
+          <span placement="end" ngbTooltip="Required">*</span></label
+        >
+        <input type="text" formControlName="postcode" id="postcode" />
+      </div>
+
+      <div class="phone">
+        <label for="phone"
+          >Phone <span placement="end" ngbTooltip="Required">*</span></label
+        >
+        <input type="text" formControlName="phone" id="phone" />
+      </div>
+
+      <div class="email">
+        <label for="email"
+          >Email address
+          <span placement="end" ngbTooltip="Required">*</span></label
+        >
+        <input type="text" formControlName="email" id="email" />
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <h2>Additional Information</h2>
+      <label for="additionalInfo">Order notes (optional)</label>
+      <textarea
+        formControlName="additionalInfo"
+        id="additionalInfo"
+        placeholder="Notes about your order, e.g. special notes for delivery."
+      ></textarea>
+    </div>
+  </div>
+
+  <div class="your-order">
+    <h2>Your order</h2>
+    <div class="row headings">
+      <div class="col-md-8">
+        <h4>Product</h4>
+      </div>
+      <div class="col-md-4">
+        <h4>Subtotal</h4>
+      </div>
+    </div>
+    <div class="row products">
+      <div class="col-md-8 products-text">
+        Tomato Pesto <strong>x 1</strong>
+      </div>
+      <div class="col-md-4 products-value">$ 85.00</div>
+    </div>
+    <div class="row products">
+      <div class="col-md-8 products-text">Margherita <strong>x 2</strong></div>
+      <div class="col-md-4 products-value">$ 90.00</div>
+    </div>
+    <div class="row subtotal">
+      <div class="col-md-8 subtotal-text">Subtotal</div>
+      <div class="col-md-4 subtotal-value">$ 175.00</div>
+    </div>
+    <div class="row total">
+      <div class="col-md-8 total-text">Total</div>
+      <div class="col-md-4 total-value">$ 175.00</div>
+    </div>
+  </div>
+
+  <p>
+    Your personal data will be used to process your order, support your
+    experience throughout this website, and for other purposes described in our
+    privacy policy.
+  </p>
+
+  <div class="btn-order">
+    <button
+      type="submit"
+      (click)="onPlaceOrder()"
+      [disabled]="checkoutForm.valid"
+    >
+      Place order
+    </button>
+    <div
+      *ngIf="alert && !hideMsg && !checkoutForm.valid"
+      class="alert alert-danger"
+      role="alert"
+    >
+      Your order has been placed. You will be called soon by our delivery team.
+      Thank you for your order!
+    </div>
+  </div>
+</form>
+<!-- <app-footer></app-footer> -->

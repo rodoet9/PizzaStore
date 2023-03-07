@@ -1,0 +1,147 @@
+<app-header-full></app-header-full>
+
+<h1>Cart</h1>
+
+<div
+  class="row headings"
+  style="
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 48px;
+  "
+>
+  <div class="col-sm-4">Product</div>
+  <div class="col-sm-2">Size</div>
+  <div class="col-sm-2">Price</div>
+  <div class="col-sm-2">Quantity</div>
+  <div class="col-sm-2">Subtotal</div>
+  <div class="under-heading-line"></div>
+</div>
+
+<div class="cart-list" style="padding-left: 100px; padding-right: 100px">
+  <div *ngIf="orders.length !== 0; else emptyCart"></div>
+  <ng-template #emptyCart>
+    <label class="emptyCart"> Your cart is currently empty.</label>
+  </ng-template>
+
+  <div class="cart-list-item" *ngFor="let o of orders">
+    <!-- <div class="pull-left">
+      <h4 class="list-group-item-heading">{{ o.pizza.name | uppercase }}</h4>
+      <hr />
+      <p class="list-group-item-text">
+        Quantity: {{ o.quantity }} | Size: {{ o.size }} cm
+      </p>
+    </div>
+    <span class="pull-right">
+      <button
+        class="btn btn-danger"
+        (click)="orderService.deleteFromCart(o.id)"
+      >
+        X
+      </button>
+    </span> -->
+    <div class="row d-flex align-items-center">
+      <div class="col-sm-4 product">
+        <a
+          class="delete-button"
+          placement="bottom"
+          ngbTooltip="Press to delete this item"
+          (click)="orderService.deleteFromCart(o.id)"
+          >×</a
+        >
+        <div class="pizza-details">
+          <img
+            src="https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/product-black-img-1a-400x400.jpg"
+            alt=""
+            width="100px"
+            height="100px"
+          />
+
+          <p>{{ o.pizza.name | uppercase }}</p>
+        </div>
+      </div>
+
+      <div class="col-sm-2 size">{{ o.size }} cm</div>
+      <div class="col-sm-2 price">45$</div>
+      <div class="col-sm-2 quantity">
+        <input
+          type="number"
+          placeholder="{{ o.quantity }}"
+          min="0"
+          max="10"
+          id="qty"
+        />
+      </div>
+      <div class="col-sm-2 subtotal">90$</div>
+      <div class="bottom-line"></div>
+      <!-- <hr style="margin-top: 12px" /> -->
+    </div>
+  </div>
+</div>
+
+<div
+  class="row"
+  style="padding-left: 100px; padding-right: 100px; margin-bottom: 64px"
+>
+  <div style="display: flex; justify-content: space-between">
+    <div class="coupon">
+      <input type="text" [(ngModel)]="couponCode" placeholder="Coupon code" />
+      <button
+        type="submit"
+        name="apply_coupon"
+        value="Apply coupon"
+        (click)="onCoupon()"
+        triggers="click"
+        [autoClose]="'outside'"
+        ngbTooltip="The coupon has been applied!"
+        placement="bottom"
+        tooltipClass="my-custom-class"
+      >
+        Apply coupon
+      </button>
+      <!-- <div
+        *ngIf="alert && !hideMessage"
+        class="alert alert-danger"
+        role="alert"
+      >
+        The coupon has been applied!
+      </div> -->
+    </div>
+    <div>
+      <button
+        type="submit"
+        class="button-update"
+        name="update_cart"
+        value="Update cart"
+        disabled=""
+      >
+        Update cart
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="cart-details">
+  <h2>Cart totals</h2>
+  <div class="row cart-subtotal">
+    <div class="col-sm-3">
+      <div class="cart-subtotal-text">Subtotal</div>
+    </div>
+    <div class="col-sm-9">
+      <div class="cart-subtotal-value" style="color: #858585">$300.00</div>
+    </div>
+  </div>
+  <div class="row cart-total">
+    <div class="col-sm-3">
+      <div class="total-text">Total</div>
+    </div>
+    <div class="col-sm-9">
+      <div class="total-value">$300.00</div>
+    </div>
+  </div>
+
+  <button type="submit" class="button-checkout" name="checkout" routerLink="/orders">
+    Proceed to checkout
+  </button>
+</div>

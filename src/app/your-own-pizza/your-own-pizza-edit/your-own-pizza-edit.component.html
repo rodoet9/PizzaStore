@@ -1,0 +1,125 @@
+<!-- <div class="row">
+  <div class="col-xs-12">
+    <form>
+      <div class="row">
+        <div class="col-sm-5 form-group">
+          <label for="name">Name</label>
+          <input 
+          type="text" 
+          id="name" 
+          class="form-control" 
+          #nameInput/>
+        </div>
+        <div class="col-sm-2 form-group">
+          <label for="amount">Amount</label>
+          <input 
+          type="number" 
+          id="amount" 
+          class="form-control" 
+          #amountInput/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+            <button (click)="onAddItem()"
+            class="btn btn-primary" type="button" style="margin-right: 4px;">Add</button>
+            <button 
+            class="btn btn-danger" type="button" style="margin-right: 4px;">Delete</button>
+            <button 
+            class="btn btn-warning" type="button">Clear</button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+ -->
+<div class="row">
+  <div class="col-lg-12">
+    <h2 class="d-flex justify-content-center">Start creating your own pizza</h2>
+  </div>
+</div>
+<form [formGroup]="yourPizza" (ngSubmit)="onSubmit()">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="form-group">
+        <label for="pizzaName"><h4>Pizza name</h4></label>
+        <input
+          type="text"
+          id="pizzaName"
+          formControlName="pizzaName"
+          class="form-control pizza-name-input"
+        />
+      </div>
+      <h4>Choose your ingredients:</h4>
+      <div class="checkboxes">
+        <div class="form-check">
+          <div *ngFor="let ingredient of ingredients; let i = index">
+            <label for="{{ ingredient.value }}">
+              <input
+                id="{{ ingredient.value }}"
+                formControlName="ingredients"
+                class="form-check-input"
+                type="checkbox"
+                [value]="ingredient.value"
+              />
+              {{ ingredient.description }}
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="radio">
+        <h4>What kind of ketchup would you like?</h4>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            value=" Spicy"
+            id="spicy"
+            formControlName="ketchups"
+          />
+          <label class="form-check-label" for="spicy"> Spicy ketchup</label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            value=" Classic"
+            id="classic"
+            formControlName="ketchups"
+          />
+          <label class="form-check-label" for="classic"> Classic ketchup</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="additionalNotes"><h4>Additional notes</h4></label>
+        <textarea
+          name="additionalNotes"
+          id="additionalNotes"
+          formControlName="additionalNotes"
+          class="form-control"
+          cols="10"
+          rows="5"
+        ></textarea>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <h4>Your pizza recipe looks like this</h4>
+      <p>Pizza name: {{ yourPizza.get("pizzaName")?.value }}</p>
+      <p>Ingredients: {{ yourPizza.get("ingredients")?.value }}</p>
+      <p>Ketchup:{{ yourPizza.get("ketchups")?.value }}</p>
+      <p>Additional notes: {{ yourPizza.get("additionalNotes")?.value }}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="buttons">
+      <div class="col-lg-12 d-flex justify-content-center">
+        <button class="btn-primary" type="submit" [disabled]="!yourPizza.valid">
+          Submit
+        </button>
+        <button class="btn-danger" (click)="onReset()">Clear all</button>
+      </div>
+    </div>
+  </div>
+</form>

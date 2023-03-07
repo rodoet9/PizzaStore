@@ -1,0 +1,66 @@
+<h2>Reviews</h2>
+
+<p class="description">There are no reviews yet.</p>
+
+<div class="posted-reviews" *ngFor="let review of reviewsArray">
+  <div class="image">
+    <img
+      src="https://secure.gravatar.com/avatar/edd6992019ff0cc8c35d3f0d179546ab?s=60&d=mm&r=g"
+      alt=""
+    />
+  </div>
+  <div class="posted-review">
+    <div class="posted-review-name">{{ review.name }}</div>
+    <div class="posted-review-text">{{ review.review }}</div>
+  </div>
+</div>
+
+<h2>Be the first to review "this pizza"</h2>
+<p>Your email address will not be published. Required fields are marked *</p>
+
+<form [formGroup]="reviewForm" (ngSubmit)="onSubmitReview()">
+  <div class="form-group">
+    <label class="rating-text">Your rating</label>
+    <ngb-rating
+      formControlName="rating"
+      [(rate)]="currentRate"
+      [max]="5"
+    ></ngb-rating>
+  </div>
+
+  <div class="form-group review-textarea">
+    <label for="review-textarea" class="review-text">Your review*</label>
+    <textarea
+      formControlName="review"
+      id="review-textarea"
+      cols="150"
+      rows="10"
+    ></textarea>
+  </div>
+
+  <div class="form-group review-name">
+    <label for="name" class="author">Name*</label>
+    <input
+      formControlName="name"
+      type="text"
+      id="author"
+      name="author"
+      size="30"
+    />
+  </div>
+
+  <div class="form-group review-email">
+    <label for="email" class="email">Email*</label>
+    <input
+      formControlName="email"
+      type="text"
+      id="email"
+      name="email"
+      size="30"
+    />
+  </div>
+
+  <button type="submit" id="submit" [disabled]="!reviewForm.valid">
+    Submit
+  </button>
+</form>

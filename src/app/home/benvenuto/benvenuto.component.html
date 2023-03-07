@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <p class="magic-flavor">The magic of flavor</p>
+    <h2>Benvenuto friends</h2>
+    <p class="description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu
+      in pretium molestie. Interdum et malesuada fames ac.
+    </p>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+
+<div class="benvenuto-cards">
+
+  <div *ngFor="let benvenutoElement of benvenutoCards" class="col-md-3">
+    <app-benvenuto-item [benvenutoCard]="benvenutoElement"></app-benvenuto-item>
+  </div>
+
+</div>

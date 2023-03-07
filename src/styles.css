@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+body {
+  overflow-x: hidden;
+}
+
+.row {
+  margin: 0;
+}
+
+::selection {
+  background: red;
+  color: whitesmoke;
+}

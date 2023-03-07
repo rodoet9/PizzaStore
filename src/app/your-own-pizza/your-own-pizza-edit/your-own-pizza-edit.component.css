@@ -1,0 +1,185 @@
+h2 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: 0 0;
+  outline: 0;
+  vertical-align: baseline;
+  border: 0;
+  padding: 10px 0;
+  text-align: left;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  word-wrap: break-word;
+  font-size: 36px;
+  line-height: 1.375em;
+  letter-spacing: 0.05em;
+  color: #b7903c;
+  margin: 0;
+}
+
+form {
+  padding: 0px 100px;
+}
+
+h4 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: 0 0;
+  outline: 0;
+  vertical-align: baseline;
+  border: 0;
+  padding: 10px 0;
+  text-align: left;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  word-wrap: break-word;
+  font-size: 20px;
+  line-height: 1.375em;
+  letter-spacing: 0.05em;
+  color: #b7903c;
+  margin: 0;
+}
+
+.pizza-name-input {
+  margin: 0 0 10px;
+  padding: 12px 16px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: 24px;
+  color: #858585;
+  background-color: transparent;
+  border: 2px solid #1f1f1f;
+  border-radius: 0;
+  outline: 0;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.checkboxes {
+    letter-spacing: .05em;
+    color: #303030;
+    background: 0 0;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.4em;
+    font-family: Oswald,sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    word-wrap: break-word;
+    display: block;
+    margin: 0 0 5px;
+}
+
+.radio {
+    letter-spacing: .05em;
+    color: #303030;
+    background: 0 0;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.4em;
+    font-family: Oswald,sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    word-wrap: break-word;
+    display: block;
+    margin: 0 0 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-primary {
+  vertical-align: middle;
+  font-family: Oswald, sans-serif;
+  font-size: 12px;
+  line-height: 1.4em;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  outline: 0;
+  box-sizing: border-box;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: #33418d;
+  border: 1px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 3;
+  margin-right: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #1d2549;
+}
+
+.btn-danger {
+  border-radius: 0;
+  vertical-align: middle;
+  font-family: Oswald, sans-serif;
+  font-size: 12px;
+  line-height: 1.4em;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  outline: 0;
+  box-sizing: border-box;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: #d2401e;
+  border: 1px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.btn-danger:hover {
+  background-color: #7e3221;
+}
+
+textarea {
+  position: relative;
+  width: 100%;
+  margin: 0 0 10px;
+  padding: 21px 26px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: 24px;
+  color: #858585;
+  background-color: transparent;
+  border: 2px solid #1f1f1f;
+  border-radius: 0;
+  outline: 0;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+p {
+  letter-spacing: 0.05em;
+  color: #303030;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 1.4em;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  word-wrap: break-word;
+  display: block;
+  margin-bottom: 16px;
+}

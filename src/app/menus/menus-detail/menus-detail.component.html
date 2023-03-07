@@ -1,0 +1,59 @@
+<div class="row">
+  <div class="col-md-6">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>{{ menu.name }}</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <img
+          [src]="menu.imagePath"
+          alt="{{ menu.name }}"
+          class="img-responsive"
+          style="width: 300px; height: 300px"
+        />
+      </div>
+      <div class="col-xs-12">
+        {{ menu.description }}
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="row"></div>
+
+    <!-- <div class="row">
+      <div class="col-xs-12">
+        <ul class="list-group">
+          <li
+            class="list-group-item"
+            *ngFor="let ingredient of menu.ingredients"
+          >
+            {{ ingredient.name }} | {{ ingredient.amount }}
+          </li>
+        </ul>
+      </div>
+    </div> -->
+    <!-- <div class="row">
+      <div class="col-xs-12">
+        <div class="btn-group" appDropdown>
+          <button type="button" class="btn btn-primary dropdown-toggle">
+            More settings <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+           
+            <li>
+              <a (click)="onModify()" style="cursor: pointer"
+                >Modify the ingredients</a
+              >
+            </li>
+            <li>
+              <a (click)="onEditPizza()" style="cursor: pointer">Edit menu</a>
+            </li>
+            <li><a style="cursor: pointer">Delete menu</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>

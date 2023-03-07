@@ -1,0 +1,88 @@
+<app-header-full></app-header-full>
+
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-8">
+    <h3>Add a new pizza</h3>
+    <form [formGroup]="addPizzaForm" (ngSubmit)="onSubmit()">
+      <p>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter the name of the pizza"
+          formControlName="name"
+        />
+      </p>
+      <p>
+        <label for="imagePath">Add an image</label>
+        <input
+          type="text"
+          id="imagePath"
+          placeholder="Enter an URL only"
+          formControlName="imagePath"
+        />
+      </p>
+      <p>
+        <label for="description">Description</label>
+        <textarea
+          name="description"
+          id="description"
+          formControlName="description"
+          cols="30"
+          rows="5"
+        ></textarea>
+      </p>
+      <div class="nutritional">
+        <p>
+          <label for="calories">Calories</label>
+          <input
+            type="number"
+            id="calories"
+            min="0"
+            placeholder="0"
+            formControlName="calories"
+          />
+
+          <label for="carbohydrates">Carbohydrates</label>
+          <input
+            type="number"
+            min="0"
+            placeholder="0"
+            id="carbohydrates"
+            formControlName="carbohydrates"
+          />
+        </p>
+        <p>
+          <label for="squirrels">Squirrels</label>
+          <input
+            type="number"
+            min="0"
+            placeholder="0"
+            id="squirrels"
+            formControlName="squirrels"
+          />
+
+          <label for="fats">Fats</label>
+          <input
+            type="number"
+            min="0"
+            placeholder="0"
+            id="fats"
+            formControlName="fats"
+          />
+        </p>
+      </div>
+
+      <button
+        class="btn-style"
+        type="submit"
+        [disabled]="!addPizzaForm.valid"
+        (click)="onSave()"
+      >
+        Save pizza
+      </button>
+    </form>
+  </div>
+  <div class="col-md-3"></div>
+</div>

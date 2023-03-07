@@ -1,0 +1,26 @@
+.text {
+  text-align: left;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #b7903c;
+  margin-right: 14px;
+  width: 80px;
+}
+
+.value {
+  font-family: open sans, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #858585;
+  vertical-align: middle;
+  text-align: left;
+}
+
+div {
+  display: flex;
+}

@@ -1,0 +1,8 @@
+.myCont {
+    width: 100%;
+    min-height: calc(100vh - 76px);
+    height: 100%;
+    background-color: rgba(217, 213, 213, 0.315);
+    /* background-image: url("https://t3.ftcdn.net/jpg/04/08/51/78/360_F_408517872_u7m4me8l83eenmUcsJ1ArSZymm5Unz4X.jpg"); */
+  }
+  

@@ -1,0 +1,323 @@
+h1 {
+  background-image: url("https://i.postimg.cc/pV1gyNDm/Screenshot-2022-11-22-170320.png");
+  color: whitesmoke;
+  padding-left: 100px;
+  padding-top: 100px;
+  height: 280px;
+  text-transform: uppercase;
+  font-family: Oswald, sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  letter-spacing: 0.05em;
+  color: #303030;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  font-size: 25px;
+  line-height: 1.4em;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  word-wrap: break-word;
+  margin: 8px 0 33px;
+}
+
+form {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.form-group {
+  display: flex;
+}
+
+.firstName {
+  margin-right: 12px;
+}
+
+label {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #858585;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6em;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0 0 5px;
+}
+.country label {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #858585;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6em;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0 0 5px;
+}
+
+input {
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  margin: 0 0 10px;
+  padding: 21px 26px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: 24px;
+  background-color: transparent;
+  border: 2px solid #1f1f1f;
+  border-radius: 0;
+  outline: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+textarea {
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  width: 100%;
+  margin: 0 0 10px;
+  padding: 21px 26px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: 24px;
+  background-color: transparent;
+  border: 2px solid #1f1f1f;
+  border-radius: 0;
+  outline: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+select {
+  -webkit-font-smoothing: antialiased;
+  background: 0 0;
+  display: block;
+  height: 70px;
+  user-select: none;
+  position: relative;
+  width: 100%;
+  margin: 0 0 10px;
+  padding: 21px 26px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: 24px;
+  color: #858585;
+  background-color: transparent;
+  border: 2px solid #1f1f1f;
+  border-radius: 0;
+  outline: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.your-order {
+  /* padding-left: 100px;
+  padding-right: 100px; */
+  margin-top: 80px;
+  margin-bottom: 36px;
+}
+
+.col-md-8,
+.col-md-4 {
+  padding-left: 0;
+}
+
+h4 {
+  -webkit-font-smoothing: antialiased;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: 0 0;
+  outline: 0;
+  padding: 14px 0;
+  text-align: left;
+  vertical-align: middle;
+  border: 0;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  word-wrap: break-word;
+  font-size: 16px;
+  line-height: 1.375em;
+  letter-spacing: 0.05em;
+  margin: 0;
+  color: #b7903c;
+}
+
+.headings {
+  border-bottom: 2px solid black;
+}
+
+.products-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #858585;
+  -webkit-font-smoothing: antialiased;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+  padding: 14px 0;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.products-value {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #858585;
+  -webkit-font-smoothing: antialiased;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+  padding: 14px 0;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.products {
+  border-bottom: 1px solid black;
+}
+
+.subtotal,
+.total {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: 0 0;
+  outline: 0;
+  padding: 14px 0;
+  text-align: left;
+  vertical-align: middle;
+  border: 0;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  word-wrap: break-word;
+  font-size: 16px;
+  line-height: 1.375em;
+  letter-spacing: 0.05em;
+  margin: 0;
+  color: #b7903c;
+  border-bottom: 1px solid black;
+}
+
+.subtotal-value {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #858585;
+  -webkit-font-smoothing: antialiased;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+}
+
+.total-value {
+  -webkit-font-smoothing: antialiased;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+  color: #303030;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  font-size: 16px;
+  line-height: 1.375em;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #858585;
+  -webkit-font-smoothing: antialiased;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  margin: 10px 0;
+  line-height: 1.6em;
+}
+
+.btn-order {
+  /* padding: 0px 100px; */
+  margin-top: 24px;
+}
+
+button {
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  margin: 0;
+  font-family: Oswald, sans-serif;
+  font-size: 12px;
+  line-height: 1.4em;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  outline: 0;
+  box-sizing: border-box;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: #d2401e;
+  border: 1px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 3;
+}
+
+button:hover {
+  background-color: #7e3525;
+}
+
+.alert-danger {
+  margin-top: 24px;
+  border-radius: 0;
+  width: 70%;
+  text-align: center;
+  padding: 21px 26px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: inherit;
+  line-height: 24px;
+  background-color: transparent;
+  border: 2px solid #1f1f1f;
+  outline: 0;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}

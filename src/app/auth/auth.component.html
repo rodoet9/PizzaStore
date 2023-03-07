@@ -1,0 +1,74 @@
+<app-header-full></app-header-full>
+
+<h1>My Account</h1>
+
+<div class="login-background">
+  <div class="row" style="margin-top: 28px">
+    <div class="col-xs-12 col-md-6">
+      <div *ngIf="isLoading" style="text-align: center">
+        <app-loading-spinner></app-loading-spinner>
+      </div>
+      <form
+        #authForm="ngForm"
+        (ngSubmit)="onSubmit(authForm)"
+        *ngIf="!isLoading"
+      >
+        <div class="alert alert-danger" *ngIf="error">
+          <p>{{ error }}</p>
+        </div>
+        <h2>Login</h2>
+        <div class="form-group">
+          <label for="email"><h4>Username or email address *</h4></label>
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            ngModel
+            name="email"
+            required
+            email
+          />
+        </div>
+        <div class="form-group">
+          <label for="password"><h4>Password *</h4></label>
+          <input
+            type="password"
+            id="password"
+            class="form-control"
+            ngModel
+            name="password"
+            required
+            minlength="4"
+          />
+        </div>
+        <div class="buttons">
+          <div class="button-login">
+            <button
+              class="btn-login"
+              type="submit"
+              [disabled]="!authForm.valid"
+            >
+              {{ isLoggedIn ? "Login" : "Sign Up" }}
+            </button>
+          </div>
+          <div class="button-switch">
+            <button class="btn-switch" (click)="onSwitchMode()" type="button">
+              Switch to {{ isLoggedIn ? "Sign up" : "Sign in" }}
+            </button>
+          </div>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            Remember me
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

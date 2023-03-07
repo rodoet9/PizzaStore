@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-md">
+  <span class="navbar-brand">
+    <a routerLink="/home">
+      <img
+        class="d-inline-block align-top"
+        src="https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/logo.png"
+        alt=""
+        style="width: 163px; height: 70px"
+    /></a>
+  </span>
+  <button
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+    class="navbar-toggler"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  ></button>
+  <div id="navbarNav" class="collapse navbar-collapse navLeft">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a
+          routerLink="/home"
+          class="nav-link"
+          id="navbarDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          >Home</a
+        >
+      </li>
+      <li class="nav-item active" *ngIf="isAuthenticated">
+        <a routerLink="/your-own-pizza" class="nav-link">Your own pizza</a>
+      </li>
+      <li routerLinkActive="active" class="nav-item">
+        <a routerLink="/menus" class="nav-link">Menu</a>
+      </li>
+
+      <li class="nav-item active">
+        <a href="" class="nav-link">Events</a>
+      </li>
+    </ul>
+  </div>
+  <div id="navbarNav" class="navRight">
+    <ul class="navbar-nav">
+      <li class="nav-item active" *ngIf="isAuthenticated">
+        <a href="" class="nav-link order-online">Order online</a>
+      </li>
+      <li class="nav-item active" *ngIf="isAuthenticated">
+        <a routerLink="/pizza-cart" class="nav-link"
+          ><img
+            src="https://i.postimg.cc/WzZxGqNt/Pizza-delivery-man-with-scooter-and-helmet-royalty-free-PNG-removebg-preview.png"
+            alt=""
+            width="30px"
+            height="30px"
+          />Cart</a
+        >
+      </li>
+      <li class="nav-item active" *ngIf="!isAuthenticated">
+        <a routerLink="/auth" class="nav-link">Log In</a>
+      </li>
+      <li class="nav-item active" *ngIf="isAuthenticated">
+        <a routerLink="/auth" class="nav-link" (click)="onLogout()">Log Out</a>
+      </li>
+      <li class="nav-item active" *ngIf="isAuthenticated">
+        <a routerLink="/new" class="nav-link">Modify menu</a>
+      </li>
+    </ul>
+  </div>
+</nav>

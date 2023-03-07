@@ -1,0 +1,98 @@
+.footer {
+  display: flex;
+  margin-top: 120px;
+}
+
+.restaurants {
+  display: flex;
+}
+
+.col-md-4 {
+  display: grid;
+  justify-content: center;
+  padding: 100px 24px;
+}
+
+.title {
+  -webkit-font-smoothing: antialiased;
+  text-align: left;
+  letter-spacing: 0.05em;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  font-size: 18px;
+  line-height: 1.389em;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  word-wrap: break-word;
+  margin: 0 0 15px;
+  color: #b7903c;
+}
+
+a {
+  font-family: open sans, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-align: left;
+  line-height: 1.6em;
+  background: 0 0;
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+  color: #b2b2b2;
+}
+
+a:hover {
+  color: #b7903c;
+}
+
+h6 {
+  color: #b7903c;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  word-wrap: break-word;
+  margin: 0;
+}
+
+p {
+  font-family: open sans, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-align: left;
+  color: #b2b2b2;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  line-height: 1.6em;
+}
+
+h2 {
+  -webkit-font-smoothing: antialiased;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  font-family: Oswald;
+  font-size: 25px;
+  line-height: 37px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #ffffff;
+  margin: 0 16% 30px 0;
+}
